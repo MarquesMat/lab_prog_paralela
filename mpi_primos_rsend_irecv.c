@@ -22,8 +22,8 @@ int main(int argc, char *argv[])
 	long int i, n;
 	int meu_ranque, num_procs, inicio, salto;
 	int etiq = 3;
-	MPI_Request pedido_envia;
-
+	MPI_Status estado;
+	MPI_Request pedido_recebe;
 	if (argc < 2)
 	{
 		printf("Valor inválido! Entre com um valor do maior inteiro\n");
@@ -52,7 +52,8 @@ int main(int argc, char *argv[])
 		total = cont;
 		for (int origem = 1; origem < num_procs; origem++)
 		{
-			MPI_Recv(&cont, 1, MPI_INT, origem, etiq, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+			MPI_Irecv(&cont, 1, MPI_INT, origem, etiq, MPI_COMM_WORLD, &pedido_recebe);
+			MPI_Wait(&pedido_recebe, &estado);
 			total += cont;
 		}
 	}
@@ -61,7 +62,7 @@ int main(int argc, char *argv[])
 	{
 		t_final = MPI_Wtime();
 		// MPI_Send(&cont, 1, MPI_INT, destino, etiq, MPI_COMM_WORLD);
-		MPI_Isend(&cont, 1, MPI_INT, destino, etiq, MPI_COMM_WORLD, &pedido_envia);
+		MPI_Rsend(&cont, 1, MPI_INT, destino, etiq, MPI_COMM_WORLD);
 	}
 
 	if (meu_ranque == 0)

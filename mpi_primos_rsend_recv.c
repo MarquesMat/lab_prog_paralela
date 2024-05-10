@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 	{
 		t_final = MPI_Wtime();
 		// MPI_Send(&cont, 1, MPI_INT, destino, etiq, MPI_COMM_WORLD);
-		MPI_Isend(&cont, 1, MPI_INT, destino, etiq, MPI_COMM_WORLD, &pedido_envia);
+		MPI_Rsend(&cont, 1, MPI_INT, destino, etiq, MPI_COMM_WORLD);
 	}
 
 	if (meu_ranque == 0)
