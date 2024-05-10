@@ -19,7 +19,6 @@ int main(int argc, char *argv[]) {
 	int meu_ranque, num_procs, inicio, salto;
 	int etiq = 3;
 	MPI_Status estado;
-	MPI_Request pedido_envia;
 	MPI_Request pedido_recebe;
 
 	if (argc < 2) {
