@@ -3,7 +3,7 @@
 #include "mpi.h"
 #include <math.h>
 
-int primo (long int n) { /* mpi_primos.c  */
+int primo (long int n) { /*  primos.c  */
 	int i;
        
 	for (i = 3; i < (int)(sqrt(n) + 1); i+=2) {

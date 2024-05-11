@@ -1,0 +1,49 @@
+Rodando os programas com 8 processos e N = 10000000
+mpi_primos.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.329 
+mpi_primos_isend_irecv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.328 
+mpi_primos_isend_recv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.346 
+mpi_primos_rsend_irecv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.315 
+mpi_primos_rsend_recv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.289 
+mpi_primos_send_irecv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.346 
+mpi_primos_send_recv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.346 
+mpi_primos_ssend_irecv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.321 
+mpi_primos_ssend_recv.c
+Quant. de primos entre 1 e n: 664579 
+Tempo de execucao: 0.312 
+mpi_primosbag.c
+Quant. de primos entre 1 e 10000000: 664579 
+Tempo de execucao: 0.297 
+mpi_primosbag_isend_irecv.c
+Quant. de primos entre 1 e 10000000: 664579 
+Tempo de execucao: 0.239 
+mpi_primosbag_send_irecv.c
+Quant. de primos entre 1 e 10000000: 664579 
+Tempo de execucao: 0.287 
+mpi_primos.c
+mpi_primos_isend_irecv.c
+mpi_primos_isend_recv.c
+mpi_primos_rsend_irecv.c
+mpi_primos_rsend_recv.c
+mpi_primos_send_irecv.c
+mpi_primos_send_recv.c
+mpi_primos_ssend_irecv.c
+mpi_primos_ssend_recv.c
+mpi_primosbag.c
+mpi_primosbag_isend_irecv.c
+mpi_primosbag_send_irecv.c
