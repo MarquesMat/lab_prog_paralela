@@ -1,0 +1,16 @@
+INÍCIO DO PROGRAMA:  04:27:53
+Rodando os programas com N = 100000000
+--- RODADA 1 ---
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao 36.977--- RODADA 2 ---
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao 36.992--- RODADA 3 ---
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao 36.960Rodando os programas com N = 1000000000
+--- RODADA 1 ---
+Quant. de primos entre 1 e n: 50847534 
+Tempo de execucao 1005.999--- RODADA 2 ---
+Quant. de primos entre 1 e n: 50847534 
+Tempo de execucao 1005.965--- RODADA 3 ---
+Quant. de primos entre 1 e n: 50847534 
+Tempo de execucao 1005.743FIM DO PROGRAMA:  05:23:03

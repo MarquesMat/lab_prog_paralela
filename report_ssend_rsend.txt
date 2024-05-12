@@ -1,0 +1,280 @@
+INÍCIO DO PROGRAMA:  23:07:16
+Rodando os programas com N = 100000000
+--- RODADA 1 ---
+
+Rodando os programas com 8 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.649 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.518 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.045 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.438 
+
+Rodando os programas com 4 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 11.213 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.979 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.772 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.799 
+
+Rodando os programas com 2 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.882 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.892 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.871 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.853 
+--- RODADA 2 ---
+
+Rodando os programas com 8 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.896 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.979 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 7.042 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.884 
+
+Rodando os programas com 4 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 12.509 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.837 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.822 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.855 
+
+Rodando os programas com 2 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.918 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.886 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.881 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.863 
+--- RODADA 3 ---
+
+Rodando os programas com 8 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.977 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.070 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.546 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.444 
+
+Rodando os programas com 4 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.830 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 15.074 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.816 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 10.802 
+
+Rodando os programas com 2 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.848 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.852 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.848 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 31.865 
+Rodando os programas com N = 1000000000
+--- RODADA 1 ---
+
+Rodando os programas com 8 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 183.336 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 179.715 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 181.962 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 183.400 
+
+Rodando os programas com 4 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 318.035 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 311.696 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 324.406 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 302.890 
+
+Rodando os programas com 2 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.271 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.284 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.064 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.296 
+--- RODADA 2 ---
+
+Rodando os programas com 8 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 181.922 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 181.819 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 187.829 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 178.320 
+
+Rodando os programas com 4 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 318.330 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 313.124 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 314.181 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 314.303 
+
+Rodando os programas com 2 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.282 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.130 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.335 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.117 
+--- RODADA 3 ---
+
+Rodando os programas com 8 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 186.261 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 177.874 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 170.677 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 174.004 
+
+Rodando os programas com 4 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 324.864 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 309.082 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 334.428 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 300.672 
+
+Rodando os programas com 2 processos
+
+--> mpi_primosbag_rsend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.290 
+--> mpi_primosbag_rsend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.360 
+--> mpi_primosbag_ssend_irecv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.361 
+--> mpi_primosbag_ssend_recv.c
+Quant. de primos entre 1 e 1000000000: 50847534 
+Tempo de execucao: 872.434 
+FIM DO PROGRAMA:  04:27:23
