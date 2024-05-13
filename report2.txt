@@ -1,0 +1,25 @@
+Rodando os programas com 8 processos e N = 100000000
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.627 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.773 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.530 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.427 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.365 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.507 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.875 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.650 
+Quant. de primos entre 1 e n: 5761455 
+Tempo de execucao: 7.935 
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.748 
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.844 
+Quant. de primos entre 1 e 100000000: 5761455 
+Tempo de execucao: 6.299 

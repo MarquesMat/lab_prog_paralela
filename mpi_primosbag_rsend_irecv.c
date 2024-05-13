@@ -12,14 +12,13 @@ int i;
 	return 1;
 }
 
-int main(int argc, char *argv[]) { /*  primosbag.c  */
+int main(int argc, char *argv[]) { /* mpi_primosbag.c  */
     double t_inicial, t_final;
     int cont = 0, total = 0;
     int i, n;
     int meu_ranque, num_procs, inicio, dest, raiz=0, tag=1, stop=0;
     MPI_Status estado;
 	MPI_Request pedido_recebe;
-    MPI_Request pedido_envia;
 
     /* Verifica o número de argumentos passados */
 	if (argc < 2) {
@@ -41,13 +40,16 @@ int main(int argc, char *argv[]) { /*  primosbag.c  */
     t_inicial = MPI_Wtime();
 /* Envia pedaços com TAMANHO números para cada processo */
     if (meu_ranque == 0) { 
+        /* Fica recebendo as contagens parciais de cada processo */
         for (dest=1, inicio=3; dest < num_procs && inicio < n; dest++, inicio += TAMANHO) {
             //MPI_Send(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
-            MPI_Isend(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD, &pedido_envia);
+            //MPI_Barrier(MPI_COMM_WORLD);
+            MPI_Rsend(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
+            //MPI_Wait(&pedido_recebe, &estado);
         }
-/* Fica recebendo as contagens parciais de cada processo */
         while (stop < (num_procs-1)) {
             MPI_Irecv(&cont, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &pedido_recebe);
+            //MPI_Barrier(MPI_COMM_WORLD);
             MPI_Wait(&pedido_recebe, &estado);
             total += cont;
             dest = estado.MPI_SOURCE;
@@ -55,9 +57,10 @@ int main(int argc, char *argv[]) { /*  primosbag.c  */
                 tag = 99;
                 stop++;
             }
-/* Envia um nvo pedaço com TAMANHO números para o mesmo processo*/
+            
+            /* Envia um nvo pedaço com TAMANHO números para o mesmo processo*/
             //MPI_Send(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
-            MPI_Isend(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD, &pedido_envia);
+            MPI_Rsend(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
             inicio += TAMANHO;
         }
     }       
@@ -65,13 +68,17 @@ int main(int argc, char *argv[]) { /*  primosbag.c  */
 /* Cada processo escravo recebe o início do espaço de busca */
         while (estado.MPI_TAG != 99) {
             MPI_Irecv(&inicio, 1, MPI_INT, raiz, MPI_ANY_TAG, MPI_COMM_WORLD, &pedido_recebe);
+            //MPI_Barrier(MPI_COMM_WORLD);
             MPI_Wait(&pedido_recebe, &estado);
             if (estado.MPI_TAG != 99) {
                 for (i = inicio, cont=0; i < (inicio + TAMANHO) && i < n; i+=2) 
 		            if (primo(i) == 1)
                         cont++;
 /* Envia a contagem parcial para o processo mestre */
-                MPI_Send(&cont, 1, MPI_INT, raiz, tag, MPI_COMM_WORLD);
+                //MPI_Send(&cont, 1, MPI_INT, raiz, tag, MPI_COMM_WORLD);
+                
+                MPI_Rsend(&cont, 1, MPI_INT, raiz, tag, MPI_COMM_WORLD);
+                //MPI_Wait(&pedido_recebe, &estado);
             } 
         } 
 /* Registra o tempo final de execução */

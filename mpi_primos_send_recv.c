@@ -4,7 +4,7 @@
 #include <math.h>
 
 int primo(long int n)
-{ /* mpi_primos.c  */
+{ /*  primos.c  */
 	int i;
 
 	for (i = 3; i < (int)(sqrt(n) + 1); i += 2)

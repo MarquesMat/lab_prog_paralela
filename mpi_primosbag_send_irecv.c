@@ -12,7 +12,7 @@ int i;
 	return 1;
 }
 
-int main(int argc, char *argv[]) { /* mpi_primosbag.c  */
+int main(int argc, char *argv[]) { /*  primosbag.c  */
     double t_inicial, t_final;
     int cont = 0, total = 0;
     int i, n;
